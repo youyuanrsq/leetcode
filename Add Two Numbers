@@ -1,0 +1,18 @@
+You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
+
+You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/add-two-numbers
+
+题目大意：给定两个表示非负整数的非空的链表。数字以逆序方式存储，并且链表的每个节点只包含一个数字，将两数相加并返回一个链表。
+
+Example:
+
+Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
+Output: 7 -> 0 -> 8
+Explanation: 342 + 465 = 807.
+
+
+思想：既然是逆序存储，那利用尾指针从尾部开始逐个相加就行，因为还有进位操作，因此再加一个表示进位操作的flag。
+
